@@ -13,7 +13,7 @@ ENV erlang_download_url="http://erlang.org/download/otp_win64_20.0.exe" \
     RABBITMQ_CONFIG_FILE="c:\rabbitmq"
 
 # rabbitmq zip package download url
-ENV rabbit_download_url "https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.9/rabbitmq-server-windows-$rabbitmq_version.zip"
+ENV rabbit_download_url "https://www.rabbitmq.com/releases/rabbitmq-server/v$rabbitmq_version/rabbitmq-server-windows-$rabbitmq_version.zip"
 
 # setup powershell options for RUN commands
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
